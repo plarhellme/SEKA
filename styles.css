@@ -332,23 +332,22 @@ footer {
 }
 
 .goods-item {
-    width: 450px; /* Match the image size */
-    height: 450px; /* Match the image size */;
+    width: 450px;
+    height: auto; /* Adjust height dynamically */
     text-align: center;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: visible;
+    padding: 10px;
 }
 
 .goods-item img {
-    width: auto; /* Maintain the original width of the image */
-    height: auto; /* Stretch to fit the height of the box */
-    object-fit: contain; /* Ensure the image fits without distortion */
-    display: block; /* Remove any inline spacing issues */
-    margin: auto; /* Center the image within the box */
-    margin-bottom: 10px; /* Add spacing between the image and text */
+    width: 100%; /* Ensure the image fits the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Prevent distortion */
+    margin-bottom: 15px; /* Add spacing below the image */
 }
 
 .goods-item h3 {
@@ -362,8 +361,9 @@ footer {
     font-size: 1rem;
     color: #666;
     text-align: center;
-    opacity: 1; /* Ensure the description is visible */
+    opacity: 1;
     visibility: visible;
+    display: block;
 }
 
 .fade-in-div {
