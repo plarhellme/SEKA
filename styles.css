@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body {
+    height: 100%; /* Ensure the body takes up the full height of the viewport */
+}
+
 .kanit-thin {
     font-family: "Kanit", sans-serif;
     font-weight: 100;
@@ -115,9 +119,11 @@ html {
 body {
     font-family: 'Kanit', sans-serif; /* Replace 'Sarabun' with your desired font */
     margin: 0;
-    padding: 0;
+    padding: 0 0 50px 0; /* Add padding to the bottom to accommodate the footer */
     background-color: #f4f4f4;
     color: #333;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Ensure headers and other elements inherit the font */
@@ -158,9 +164,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: relative;
-    bottom: 0;
+    position: relative; /* Ensure it does not overlap content */
     width: 100%;
+    margin-top: auto; /* Push it to the bottom if using flexbox */
 }
 
 /* Carousel Styles */
