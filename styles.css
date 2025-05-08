@@ -339,12 +339,12 @@ footer {
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    overflow: visible;
 }
 
 .goods-item img {
     width: auto; /* Maintain the original width of the image */
-    height: 100%; /* Stretch to fit the height of the box */
+    height: auto; /* Stretch to fit the height of the box */
     object-fit: contain; /* Ensure the image fits without distortion */
     display: block; /* Remove any inline spacing issues */
     margin: auto; /* Center the image within the box */
