@@ -333,6 +333,7 @@ footer {
 
 .goods-item {
     width: 450px; /* Match the image size */
+    height: 450px; /* Match the image size */;
     text-align: center;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -343,7 +344,7 @@ footer {
 
 .goods-item img {
     width: 100%; /* Ensure the image fits the container */
-    height: auto; /* Maintain aspect ratio */
+    height: 100%; /* Maintain aspect ratio */
 }
 
 .goods-item h3 {
