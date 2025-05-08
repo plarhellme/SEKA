@@ -348,6 +348,7 @@ footer {
     object-fit: contain; /* Ensure the image fits without distortion */
     display: block; /* Remove any inline spacing issues */
     margin: auto; /* Center the image within the box */
+    margin-bottom: 10px; /* Add spacing between the image and text */
 }
 
 .goods-item h3 {
@@ -361,6 +362,8 @@ footer {
     font-size: 1rem;
     color: #666;
     text-align: center;
+    opacity: 1; /* Ensure the description is visible */
+    visibility: visible;
 }
 
 .fade-in-div {
