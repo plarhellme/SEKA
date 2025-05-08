@@ -151,14 +151,15 @@ nav {
 }
 
 nav a {
-    margin: 0 15px;
+    margin: 0 15px; /* Add spacing between links */
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    display: inline-block; /* Ensure each link is its own block */
 }
 
 nav a:hover {
-    color: #007BFF;
+    color: #007BFF; /* Add hover effect */
 }
 
 section {
