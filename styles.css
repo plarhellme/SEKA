@@ -398,13 +398,14 @@ footer {
 
 .about-text {
     flex: 1;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 1.6;
     color: #333;
-    text-align: justify;
+    text-align: left;
     opacity: 0; /* Initially hidden for fade-in effect */
     transform: translateX(50px); /* Slide in from the right */
     transition: opacity 1s ease, transform 1s ease;
+    margin: 0;
 }
 
 /* Initial state */
