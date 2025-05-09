@@ -13,6 +13,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
     fadeInElements.forEach((el) => observer.observe(el));
 
+    // New fade-in functionality for opposite directions
+    const fadeInLeftElements = document.querySelectorAll(".fade-in-left");
+    const fadeInRightElements = document.querySelectorAll(".fade-in-right");
+
+    const observerOptions = {
+        threshold: 0.1, // Trigger when 10% of the element is visible
+    };
+
+    const oppositeObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, observerOptions);
+
+    fadeInLeftElements.forEach((el) => oppositeObserver.observe(el));
+    fadeInRightElements.forEach((el) => oppositeObserver.observe(el));
+
     // Carousel functionality
     const carouselImages = document.querySelector('.carousel-images');
     const images = document.querySelectorAll('.carousel-images img');
