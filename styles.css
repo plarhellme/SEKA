@@ -381,7 +381,8 @@ footer {
 
 .about-image {
     flex: 1;
-    max-width: 500px;
+    max-width: auto;
+    max-height: auto;
     text-align: center;
     opacity: 0; /* Initially hidden for fade-in effect */
     transform: translateX(-50px); /* Slide in from the left */
@@ -403,6 +404,13 @@ footer {
     text-align: justify;
     opacity: 0; /* Initially hidden for fade-in effect */
     transform: translateX(50px); /* Slide in from the right */
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Initial state */
+.fade-in-left, .fade-in-right {
+    opacity: 0; /* Start hidden */
+    transform: translateX(-50px); /* Slide in from the left */
     transition: opacity 1s ease, transform 1s ease;
 }
 
